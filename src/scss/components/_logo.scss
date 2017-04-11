@@ -1,0 +1,66 @@
+@keyframes rolling {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+#logo {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    position: relative;
+    animation: rolling 3s linear 0s infinite;
+    div {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        &:nth-child(1) {
+            border-radius: 50%;
+            background: #343434;
+            left: 10px;
+            top:10px;
+        }
+        @for $i from 2 to 5{
+            &:nth-child(#{$i}){
+                $deg:$i - 2;
+                width: 70%;
+                height: 70%;
+                background: rgba(255, 0, 0, 0.5);
+                border: 2px solid black;
+                transform: rotate($deg *120deg) scaleX(0.4);
+                border-radius: 50%;
+                left: 14%;
+                top: 14%;
+            }
+        }
+        @for $i from 5 to 8{
+            &:nth-child(#{$i}){
+                $deg:$i - 2;
+                width: 40%;
+                height: 50%;
+                background: black;
+                border: 2px solid black;
+                clip: rect(0px, auto, 38px, 0px);
+                z-index: 5000;
+                border-radius: 50%;
+                transform: rotate($deg *120deg) scaleX(0.3);
+                left: 29%;
+                top: 24%;
+            }
+        }
+
+        &:nth-child(8) {
+            width: 10%;
+            height: 10%;
+            background: red;
+            z-index: 100;
+            border-radius: 50%;
+            z-index: 9000;
+            left: 45%;
+            top: 45%;
+        }
+    }
+}

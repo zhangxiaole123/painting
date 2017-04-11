@@ -1,0 +1,82 @@
+.pager {
+    font-size: 0px;
+    ul {
+        font-size: 0px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    li {
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: top;
+        &:first-child {
+            a {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
+        &:last-child {
+            a {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+    }
+    a {
+        display: block;
+        border-right: 1px solid darken($basecol, 5%);
+        color: white;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: pxToRem(14px);
+        background: $basecol;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background: darken($basecol, 5%);
+        }
+        i {
+            line-height: 30px;
+        }
+    }
+    .current {
+        a {
+            background: darken($basecol, 5%);
+        }
+    }
+    .disable {
+        a {
+            background: #c8c8c8;
+            border-color: #c8c8c8;
+        }
+    }
+    form {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 0px;
+        margin-right: 5px;
+
+    }
+    input {
+        @include inputfocus;
+        width: 65px;
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    button {
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    span{
+        vertical-align: top;
+        display: inline-block;
+        font-size: 12px;
+        color: $textcol;
+        line-height: 25px;
+    }
+}

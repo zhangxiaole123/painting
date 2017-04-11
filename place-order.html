@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>place order</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<head>
+		<link rel="stylesheet"  href="//at.alicdn.com/t/font_o991a5wdn8nnrk9.css">
+		<link rel="stylesheet"  href="dist/css/place-order.css" />
+		<!--[if lt IE 9]> 
+		<link rel="stylesheet" type="text/css" href="dist/css/ie9.css" />
+		<![endif]-->
+	</head>
+	<body>
+		<header class="wow lightSpeedIn">
+			<div class="logo-row w1200 clearfix" >
+				<a class="logo fl" href="##" title="logo"><img src="images/youhua/logo.jpg" alt=""></a>
+				<div>
+					<ul class="sign fr">
+						<li class="hide-input">
+							<a class="join" href="##">SIGN IN/JOIN </a>
+						</li>
+						<li class="hide-input has-signing">
+							<a class="iconfont icon-iorder" href="##"></a>
+							<div class="has-sign pop">
+								<a href="" title="">My orders</a>
+								<a href="" title="">My Coupans <span>10</span></a>
+								<a href="" title="">My Points <span>110</span></a>
+								<a href="" title="">Logout</a>
+								<i class="line"></i>
+							</div>
+						</li>
+						<li>
+							<a class="iconfont icon-sousuo-copy J_sousuo" href="##"></a>
+							<form action="youhua_submit" method="get" accept-charset="utf-8">
+								<div class="show-div J_showdiv">
+									<input class="search-input" type="text" name="search">
+									<button class="iconfont icon-sousuo" type="submit"></button>
+								</div>
+							</form>
+						</li>
+						<li class="gwc">
+							<a class="iconfont icon-gouwuche01" href="##">
+								<span class="tip">0</span>
+							</a>
+							<div class="pop">
+								<ul>
+									<li>
+										<a class="clearfix" href="##">
+											<img width="70px" height="70px" src="" alt="">
+											<div>			
+												<h1>asdasadsdsdadsdd</h1>
+												<p>
+													<span class="dj">$58</span>
+														x
+													<span class="sl">2</span>
+												</p>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="clearfix" href="##">
+											<img width="70px" height="70px" src="" alt="">
+											<div>			
+												<h1>asdasadsdsdadsdd</h1>
+												<p>
+													<span class="dj">$58</span>
+														x
+													<span class="sl">2</span>
+												</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+								<div class="total">
+									<p>Total <span class="zj">$364.8</span></p>
+									<a class="viewcat" href="##" title="">View Cart</a>
+								</div>
+								<i class="line"></i>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<nav class="nav ">
+				<ul class="w1200">
+					<li class="active"><a href="##">Home</a></li>
+					<li><a href="##">What's New</a></li>
+					<li class="subgect">
+						<a href="##">Subgect</a>
+						<div class="pop clearfix">
+							<div class="pop-dl fl">
+								<dl>
+									<dd><a href="##" title="">Abstract</a></dd>
+									<dd><a href="##" title="">Landscape & Nature</a></dd>
+									<dd><a href="##" title="">Flower & Botanical</a></dd>
+									<dd><a href="##" title="">Wildlife</a></dd>
+									<dd><a href="##" title="">Cities & Countries</a></dd>
+									<dd><a href="##" title="">Figures</a></dd>
+									<dd><a href="##" title="">Entertainment</a></dd>
+									<dd><a href="##" title="">Sports</a></dd>
+								</dl>	
+								<dl>
+									<dd><a href="##" title="">Still Life</a></dd>
+									<dd><a href="##" title="">Nautical & Beach</a></dd>	
+								</dl>
+							</div>
+							<div class="pop-img fl">
+								<a href="##" title=""><img src=""><p>adssdadadad</p></a>
+								<a href="##" title=""><img src=""><p>adssdadadad</p></a>
+							</div>
+						</div>
+					</li>
+					<li class="style">
+						<a href="##">Style</a>
+						<div class="pop clearfix">
+							<div class="pop-dl fl">
+								<dl>
+									<dd><a href="##" title="">Coastal/Seascape/Maritime</a></dd>
+									<dd><a href="##" title="">Art Nouveau</a></dd>
+									<dd><a href="##" title="">Impressionism</a></dd>
+									<dd><a href="##" title="">Modern</a></dd>
+									<dd><a href="##" title="">Naturalism</a></dd>
+									<dd><a href="##" title="">Traditional</a></dd>				
+								</dl>	
+							</div>
+							<div class="pop-img fl">
+								<a href="##" title=""><img src=""><p>adssdadadad</p></a>
+								<a href="##" title=""><img src=""><p>adssdadadad</p></a>
+							</div>
+						</div>
+					</li>
+					<li><a href="##">Tools</a></li>
+					<li><a href="##">Help</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="content w1200 wow fadeInUp"> 
+			<div class="progress firecheckout">
+				<img src="images/youhua/place_order02.png" alt="">
+			</div>		
+			<form class="clearfix" action="demo_form.asp" method="POST" id="firecheckout-form" update-url="data-updateCheckout.json" save-url="data-saveCheckout.json">
+				<div class="leftD fl">
+					<div class="shippingAddress clearfix" >
+						<h3 class="add">ShippingAddress</h3>						
+						<div class="shipping-address-form" >
+							<div class="name clearfix">
+								<div class="fl">							
+									<label for="firstname">First name<span class="required"></span></label>
+									<input type="text" name="firstname" id="firstname" class="required" title="2 characters at least for your first name." minlength="2">	
+								</div>	
+								<div class="fr">
+									<label for="lastname">Last name<span class="required"></span></label>
+									<input type="text" name="lastname" id="lastname" class="required" minlength="2" title="2 characters at least for your last name.">	
+								</div>							
+							
+								<div class="fl">									
+									<label for="phonenumber">Phone number<span class="required"></span></label><input type="text" name="number" id="phonenumber" class="required">
+								</div>
+								<div class="fr"> 
+									<label for="email">E-mail address<span class="required "></span></label><input type="text" name="email" id="email" class="required email" title="Please enter a valid email address.">	
+								</div>				
+							</div>
+							<div class="addressline1 clearfix">
+								<label for="Line1">Address Line1<span class="required"></span></label><input type="text" name="" id="Line1" class="required" minlength="5" title="Your Address line must contain at least 5 characters.">		
+							</div>
+							<div class="addressline2">
+								<label for="Line2">Address Line2:</label><input type="text" name="" id="Line2" />	
+							</div>
+							<div class="selectd ">
+								<ul >
+								    <li class="fl">
+								    	<label for="jungle">Country / Region<span class="required"></span></label>
+								    	<select class="J_country required" id="jungle" name="jungle" title="Please Select Country.">
+								    		<option value="">Please select Country.</option>
+								    	  	<option value ="volvo">Volvo</option>
+								    	  	<option value ="saab">Saab</option>
+								    	  	<option value="opel">Opel</option>
+								    	  	<option value="audi">Audi</option>
+								    	</select>
+								    </li>
+								    <li class="fr">
+								    	<label for="fruit">States<span class="required"></span></label>
+								    	<select id="fruit" class="J_state-select required" style="display:none" name="fruit" title="Please Select State/Province">
+									    	<option value=""></option>
+								    	  	<option value ="volvo">Volvo</option>
+								    	  	<option value ="saab">Saab</option>
+								    	  	<option value="opel">Opel</option>
+								    	  	<option value="audi">Audi</option>
+								    	</select>
+								    	<input class="J_state-input states required"  type="text" name="states" title="2 characters at least for your State/Province."  />
+								    </li>
+								</ul>
+							</div>
+
+							<div >
+						    	<label for="city">City<span class="required"></span></label>
+						    	<input type="text" name="city" id="city" class="city required" minlength="2" title="2 characters at least for your City.">	
+							</div>	  
+
+							<div class=" zip">
+								<label>ZIP/Postal Code<span class="required"></span></label><input type="text" name="postalCode" class="required" minlength="4" title="Your Post/ZIP Code must contain at least 4 characters.">	
+							</div>
+							<a href="#" class="privacy ">Privacy & Security Policy</a>
+						</div>					
+						<!-- customer has shipping address-->
+						<div class="address_list" >
+							<div class="contentd clearfix">
+								<input type="radio" name="billing_address_id"  checked="true" id="address_1" />
+								<label class="neirong J_div" data-id="100" for="address_1">
+									<p><label>Name:</label><span>lastname</span>&nbsp;&nbsp;<i>firstname</i></p>
+									<p><label>Phone Number:</label><span>123456798</span></p>
+									<p><label>E-mail:</label><span>123456789</span></p>
+									<p><label>Address:</label><span>xinduhui Los Angeles 20010 California United States</span></p>
+									<p><label>ZIP/Postal Code:</label><span>20010</span>
+									<a href="data-placeOrderForm.html" class="edit J_edit"><i class="iconfont icon-xiugai"></i>Edit</a></p>
+								</label>						
+							</div>
+							<div class="contentd clearfix">
+								<input type="radio" name="billing_address_id"  checked="true" id="address_2" />
+								<label class="neirong J_div" data-id="100" for="address_2">
+									<p><label>Name:</label><span>lastname</span>&nbsp;&nbsp;<i>firstname</i></p>
+									<p><label>Phone Number:</label><span>123456798</span></p>
+									<p><label>E-mail:</label><span>123456789</span></p>
+									<p><label>Address:</label><span>xinduhui Los Angeles 20010 California United States</span></p>
+									<p><label>ZIP/Postal Code:</label><span>20010</span>
+									<a href="data-placeOrderForm.html" class="edit J_edit" ><i class="iconfont icon-xiugai"></i>Edit</a></p>
+								</label>						
+							</div>
+							<a href="data-placeOrderForm.html" class="button newaddress J_newaddress" id="new">Add New Address</a>		
+						</div>
+					</div>
+					
+					<div class="shippingOptions clearfix">
+						<h3>Shipping method</h3>
+						<div class="shipping">
+						    <div class="options">
+						    	<label for="gender_male">
+						    		<input  type="radio" id="gender_male" value="m" name="shipping_method" checked="true"/>
+						    		<span class="title">Super Saver Shipping</span>
+						    		<span class="time">25 - 30 business days</span>
+						    		<span class="price">$0.00</span>
+						    	</label>
+						    	<label class="checkbox">
+						    	    	<input type="checkbox" name="tracking_number" value="1" />
+						    	    	<span class="Trackingnumber">Tracking number</span>
+						    	    	<span class="money">+$1.99</span>
+						    	    	<span class="iconfont icon-wenhao">
+						    	    		<i class="pop">
+						    	    		<em class="emtop"></em><em class="embottom"></em>Free tracking for order over $30</i>
+						    	    	</span>
+						    	</label>
+						    </div>
+						    <div class="options">
+						    	<label for="Standard">
+						    		<input  type="radio" id="Standard" value="f" name="shipping_method"/>
+						    		<span class="title">Standard Shipping </span>
+						    		<span class="time">25 - 30 business days</span>
+						    		<span class="price">$0.00</span>
+						    	</label>
+						    </div>
+						    <div class="options">
+						    	<label for="Expedited">
+						    		<input  type="radio" id="Expedited" value="f" name="shipping_method"/>
+						    		<span class="title">Expedited Shipping</span>
+						    		<span class="time">25 - 30 business days</span>
+						    		<span class="price">$0.00</span>
+						    	</label>
+						    </div>						    
+						</div>
+					</div>
+					<div class="PaymentMethod clearfix">
+						<h3>Payment Method</h3>
+						<div class="payment">
+							<div class="options clearfix">
+								<input type="radio" name="PaymentMethod" id="list1" checked="true">
+								<label for="p_method_paypal_express">
+									<img class="paypal-logo" src="images/youhua/place_order.png">
+									<p>If you don't have a paypal account,you can also pay via paypal with your credit card or bank debit card. Payment can be submitted in any currency!</p>                          
+								</label>
+							</div>
+							<div class="options clearfix">												
+								<input type="radio" name="PaymentMethod" id="list2" >
+								<label for="list2">
+									<span>asdasdasd</span>
+								</label>								
+							</div>
+							<div class="options clearfix">
+								<input type="radio" name="PaymentMethod" id="list3" >
+								<label for="list3">
+									<span>asdasdasd</span>
+								</label>					
+							</div>
+						</div>
+					</div>
+					<div class="OrderRequest fl">
+						<h3>Order Request</h3>
+						<p>If you have special instructions for your order such as a dropshipping order,gift order,etc,then please let us know!<br/> 
+						We will try our very best to accommodate you.</p>
+						<textarea name="message" cols="50" rows="6" class="required-entry" placeholder="Enter here..." ></textarea>
+					</div>
+				</div>
+				<div class="cart_right">
+					<div class="fixbox">
+						<div class="order_summary">
+							<p><span>Subtotal</span><span class="price">$9998.98</span></p>
+							<p><span>Coupon discount</span><span class="price">$9998.98</span></p>
+							<p><span>H point discount</span><span class="price">$9998.98</span></p>
+							<p><span>All save</span><span class="price">$9998.98</span></p>
+							<p><span>Shopping</span><span class="price">$9998.98</span></p>
+							<p class="grand"><span>Grand Total</span><span class="price">$0.01</span></p>
+						</div>
+						<div class="payments">
+							<button type="submit" class="button place_you_order J_place-order">Place Your Order</button>
+							<p>You will enjoy free shipping with another $20</p>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="pop-dimmer J_pop-dimmer">
+				<div class="popup J_popup">
+					<div class="shipping-address-form pop-inner J_inner">
+						<form class="clearfix " action="data-place-adress.json" method="POST" id="new-form" >
+							<h2>ADD NEW ADDRESS</h2>
+							<div class="name clearfix">
+								<div class="fl">							
+									<label for="firstname">First name<span class="required"></span></label>
+									<input type="text" name="firstname" id="firstname" class="required" title="2 characters at least for your first name." minlength="2">	
+								</div>	
+								<div class="fr">
+									<label for="lastname">Last name<span class="required"></span></label>
+									<input type="text" name="lastname" id="lastname" class="required" minlength="2" title="2 characters at least for your last name.">	
+								</div>							
+								<div class="fl">									
+									<label for="phonenumber">Phone number<span class="required"></span></label><input type="text" name="number" id="phonenumber" class="required">
+								</div>
+								<div class="fr"> 
+									<label for="email">E-mail address<span class="required "></span></label><input type="text" name="email" id="email" class="required email" title="Please enter a valid email address.">	
+								</div>				
+							</div>
+							<div class="addressline1 clearfix">
+								<label for="Line1">Address Line1<span class="required"></span></label><input type="text" name="" id="Line1" class="required" minlength="5" title="Your Address line must contain at least 5 characters.">		
+							</div>
+							<div class="addressline2">
+								<label for="Line2">Address Line2:</label><input type="text" name="" id="Line2" />	
+							</div>
+							<div class="selectd ">
+								<ul class="clearfix">
+								    <li class="fl">
+								    	<label for="jungle">Country / Region<span class="required"></span></label>
+								    	<select id="jungle" name="jungle" title="Please select something!" required>
+								    		<option></option>
+								    	  	<option value ="volvo">Volvo</option>
+								    	  	<option value ="saab">Saab</option>
+								    	  	<option value="opel">Opel</option>
+								    	  	<option value="audi">Audi</option>
+								    	</select>
+								    </li>
+								    <li class="fr">
+								    	<label for="fruit">States<span class="required"></span></label>
+								    	<select id="fruit" name="fruit" title="Please select something!" required>
+									    	<option></option>
+								    	  	<option value ="volvo">Volvo</option>
+								    	  	<option value ="saab">Saab</option>
+								    	  	<option value="opel">Opel</option>
+								    	  	<option value="audi">Audi</option>
+								    	</select>
+								    	<input type="text" name="states" class="states"/>
+								    </li>
+								</ul>
+							</div>
+
+							<div >
+						    	<label for="city">City<span class="required"></span></label>
+						    	<input type="text" name="city" id="city" class="city" required/>	
+							</div>	  
+
+							<div class=" zip">
+								<label>ZIP/Postal Code<span class="required"></span></label><input type="text" name="postalCode" required/>	
+							</div>
+							<button class="button J_saveAdress" type="submit">Submit</button>
+							<a href="#" class="privacy privacy_address">Privacy & Security Policy</a>
+						</form>
+					</div>
+					<a class="iconfont icon-guanbi close J_close" href="#" title="close"></a>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<section class="w1200 wow fadeInUp">
+				<form action="youhua_submit" method="get" accept-charset="utf-8">
+					<div class="search-div">
+						<label class="label" for="search">Newsletter：</label>
+						<input class="input-email" type="email" name="search">
+						<button class="btn" type="submit">Join</button>
+					</div>
+				</form>
+				<div class="clearfix">
+					<div class="cms_list fl">
+						<dl>
+							<dt><a href="" rel="nofollow">Our Info</a></dt>
+							<dd><a href="" rel="nofollow">About Us</a></dd>
+							<dd><a href="" rel="nofollow">Contact Us</a></dd>
+							<dd><a href="" rel="nofollow">Privacy Policy</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="" rel="nofollow">Our Info</a></dt>
+							<dd><a href="" rel="nofollow">About Us</a></dd>
+							<dd><a href="" rel="nofollow">Contact Us</a></dd>
+							<dd><a href="" rel="nofollow">Privacy Policy</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="" rel="nofollow">Our Info</a></dt>
+							<dd><a href="" rel="nofollow">About Us</a></dd>
+							<dd><a href="" rel="nofollow">Contact Us</a></dd>
+							<dd><a href="" rel="nofollow">Privacy Policy</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="" rel="nofollow">Our Info</a></dt>
+							<dd><a href="" rel="nofollow">About Us</a></dd>
+							<dd><a href="" rel="nofollow">Contact Us</a></dd>
+							<dd><a href="" rel="nofollow">Privacy Policy</a></dd>
+						</dl>
+					</div>
+					<div class="fr">
+						<ul class="social">
+							<li><a href=""><i class="iconfont icon-facebook"></i></a></li>
+							<li><a href=""><i class="iconfont icon-instagram"></i></a></li>
+							<li><a href=""><i class="iconfont icon-pinterest"></i></a></li>	
+							<li><a href=""><i class="iconfont icon-twitter"></i></a></li>
+						</ul>
+						<img src="images/youhua/foot.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section>
+				<p class="last">© 2016 Alluregal.com All Rights Reserved</p>
+			</section>
+		</footer>
+		<script src="dist/js/jquery-1.12.4.min.js"></script>
+		<script src="dist/js/jquery.validate.min.js"></script>	
+		<script src="dist/js/validate.js"></script>
+		<script src="dist/js/wow.min.js"></script>
+		<script src="dist/js/function.js"></script>
+		<script src="dist/js/common.js"></script>
+		<script src="dist/js/place-order.js"></script>
+		<script src="dist/js/modernizr.custom.26361.js"></script>
+	</body>
+</html>

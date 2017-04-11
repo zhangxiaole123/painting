@@ -1,0 +1,65 @@
+//footer
+footer{
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	padding-top: 55px;
+	.search-div{
+		border: 1px solid $color;
+		width: 477px;
+		margin: 0 auto 63px;
+		label{
+			padding: 6px 0;
+			font-size: 14px;
+			border-right:  1px solid  #eebdbd;
+			margin-right: 15px;
+			margin-left: 17px;
+		}
+		.input-email{
+			width: 260px;
+			border:none;
+			height: 38px;
+		}
+		.btn{
+			background: $color;
+			height: 38px;
+			width: 95px;
+			border: none;
+			font-size: 16px;
+			color: #fff;
+			float: right;
+		}
+	}
+	.cms_list{
+		dl{
+			width: 200px;
+			float: left;
+			margin: 0;
+			dt{
+				font-size: 14px;
+				font-weight: 700;
+			}
+			dd{
+				padding-top: 10px;
+			}
+		}
+	}
+	.social{
+		margin-bottom: 16px;
+		li{
+			float: left;
+			margin-left: 25px;
+		}
+		.iconfont{
+			font-size: 30px;
+			color: #aaa;
+		}
+	}
+}
+.last{
+	text-align: center;
+	color: #808080;
+	font-size: 14px;
+	border-top: 1px solid #dfdfdf;
+	line-height: 60px;
+	margin-top: 20px;
+}

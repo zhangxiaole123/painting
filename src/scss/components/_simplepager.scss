@@ -1,0 +1,24 @@
+.pager {
+    text-align: right;
+    margin: 10px 0px;
+    overflow: hidden;
+    a {
+        background: $ahover;
+        @include boxshow;
+        color: white;
+        padding: 5px 10px;
+        @include transition;
+        font-size: pxToRem(14px);
+        &:hover {
+            background: lighten($ahover, 10%);
+            color: $textcol;
+            @include transition;
+        }
+    }
+    .prev {
+        float: left;
+    }
+    .next {
+        float: right;
+    }
+}

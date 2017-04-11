@@ -1,0 +1,66 @@
+.pro{
+	li{
+		width: 258px;
+		height: 395px;
+		background: #f4f4f4;
+		margin-right: 56px;
+		margin-bottom: 52px;
+		float: left;
+		position: relative;
+		&.mgr{
+			margin-right: 0;
+		}
+		.icon-weixuanzhongxin{
+			position: absolute;
+			bottom: 16px;
+			right: 11px;
+			cursor: pointer;
+		}
+		.h-img{
+			width: 258px;
+			height: 258px;		
+		}
+		.h-div{
+			padding: 14px 12px 17px;
+		}
+		.h-biaoti{
+			display: block;
+			color: #aaa;
+			line-height: 20px;
+			overflow: hidden;
+			height: 40px;
+			margin: 0 auto 20px;
+		}
+		span{
+			position: absolute;
+		}
+		.text-18{
+			font-size: 18px;
+			color: #333;
+			left: 10px;
+			bottom:20px;
+		}
+		.text-red{
+			color: $color;
+			margin-left: 23px;
+			left: 57px;
+			bottom: 23px
+		}
+		.h-tip{
+			display: block;
+			position: absolute;
+			top: -10px;
+			left: 12px;
+			width: 35px;
+			height: 47px;
+			padding-top: 10px;
+			background: url(../images/tip.png);
+			color: #fff;
+			text-align: center;
+			opacity: 0.8;
+			p{
+				margin: 0;
+			}
+		}
+	}
+}

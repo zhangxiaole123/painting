@@ -1,0 +1,74 @@
+$textcol: #626262;
+$basecol: #f39c11;
+$bordercol: #dcdcdc;
+$rootfont: 12px;
+$mainwidth: 1200px;
+$columnL: 270px;
+$columnR: 870px;
+$columnGap: 60px;
+$breakpoints: ("small": (min-width: 767px), "medium": (min-width: 992px), "large": (min-width: 1200px));
+
+ul,ol {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5,h6 {
+    margin: 0px;
+}
+
+img {
+    border:none;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: $textcol;
+}
+
+dl {
+    margin-top: 0px;
+}
+
+dd {
+    margin-left: 0px;
+}
+fieldset {
+    border: none;
+}
+html, body {
+    font-size: $rootfont;
+    background: white;
+    color: $textcol;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial,Roboto, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+::-moz-selection {
+    color: #404040;
+    background: rgba(151, 187, 205, 0.5);
+}
+
+::selection {
+    color: #404040;
+    background: rgba(151, 187, 205, 0.5);
+}
+
+header, footer, section, aside, nav, article {
+    display: block;
+}
+
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner {
+    border: none;
+}

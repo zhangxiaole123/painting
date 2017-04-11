@@ -1,0 +1,28 @@
+.hot-sale{
+	margin-top: 79px;
+	margin-bottom: 62px;
+	.h1{
+		font-size: 22px;
+		color: #333;
+		width: 334px;
+		height: 59px;
+		margin: 0 auto 58px;
+		text-transform: uppercase;
+		text-align: center;
+		background: url(../images/kuang.png) no-repeat center;
+		color: $color;
+		span{
+			margin: 0 20px;
+			vertical-align: 4px;
+		}
+	}
+	.more{
+		text-align: center;
+		display: block;
+		font-size: 18px;	
+		margin-top: 40px;
+		&:hover{
+			color: $color;
+		}
+	}
+}

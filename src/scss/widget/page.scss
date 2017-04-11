@@ -1,0 +1,48 @@
+.pager{
+	float:right;
+	text-align: center;
+	color:#818181;
+	margin:20px 0;	
+	ul{
+		li{
+			float: left;
+			margin-right: 15px;
+			min-width: 25px;
+			font-size: 15px;
+			.iconfont{
+				background: #808080;
+				color: #fff;
+				border-radius: 1px;
+			}
+			a{ 
+				display: inline-block;
+				padding: 5px;
+			}
+			&:hover{				
+				a{
+					color: $color; 
+				}
+				.iconfont{
+					color:white;
+				}
+			}
+			&.mgr{
+				margin-right: 0;
+			}
+			&.current{
+				min-width: 25px;			
+				padding: 5px;
+				color:$color;
+			}
+			&.last{
+				margin-right: 0px;
+			}
+		}
+	}
+	.more:hover{
+		background:transparent;
+		a{
+			color:black;
+		}
+	}
+}

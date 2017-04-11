@@ -1,0 +1,171 @@
+.cart_right{
+	float:right;
+	width: 400px;
+	border-radius:3px;
+	position: relative;
+	.fixbox{
+		padding: 30px 20px;
+		border: 1px solid #eee;
+		background: #f7f7f7;
+	}
+	#discount-coupon-form,#discount-points-form{
+		.coupontip{
+			color: #666; 
+			margin-top: 5px;
+			b{
+				color: #000;
+			}
+			span{
+				font-weight: bold;
+				color: red;
+			}
+		}
+		label{
+			display: block;
+			font-size: 12px;
+			margin: 10px 0;
+			font-weight: bold;
+			span{
+				margin-left: 3px;
+				display: inline-block;
+				border: 1px solid #333;
+				width: 13px;
+				height: 13px;
+				text-align: center;
+				border-radius: 50%;
+				position: relative;
+				&:hover{
+					.pop{
+						display: block;
+					}
+				}
+			}
+			.coupon-point{
+				position: absolute;
+				top: 16px;
+				right: -104px;				
+				background: white;
+				text-align: left;	
+				width: 360px;
+				box-shadow: 0 0 5px #cfcfcf;
+				padding: 10px;
+				z-index: 100;
+				p{
+					font-weight: normal;
+					margin-bottom: 10px;
+					line-height: 16px;
+				}
+				em{
+					right: 103px;
+				}
+			}
+		}
+		input[type="text"]{
+			font-size: 14px;
+			width: 255px;
+			line-height: 26px;
+			margin-right:15px;
+			border:1px solid #dfdfdf;
+			border-radius:3px;
+			text-indent: 10px;
+			&:hover{
+            	border-color:#828282;
+	        }
+	        &:focus{
+	            border-color:#333;
+	        }
+		}
+		button{
+			width: 83px;
+			line-height: 26px;
+			color:#333;
+			background:white;
+			border:1px solid #aaa;
+			font-size: 12px;
+			&:hover{
+				background:black;
+				color:white;
+			}
+		}
+		em{
+			color:#aaa;
+		}
+	}
+	.order_summary{
+		color:#818181;
+		height: auto;
+		font-size: 14px;
+		margin-top: 35px;
+		.grand{
+			margin-top:20px;
+			border-top:1px solid #dfdfdf;
+			padding-top: 20px;
+			margin-bottom: 30px;
+			span{
+				font-size: 16px;
+				color: #333;
+			}
+			.price{
+				color: red;
+			}
+		}
+		p{
+			font-size: 13px;
+			height: 20px;
+			margin: 0;
+			span{
+				float: left;
+				height: 20px;
+				width: 60%;
+			}
+			.price{
+				float: right;
+				height: 20px;
+				width: 40%;
+				text-align: right;
+			}
+		}
+		.point{
+			width: 100%;
+			text-align: right;
+			a{
+				color:#666;
+				border-bottom: 1px solid #666;
+			}
+		}
+	}
+	.payments{
+		label{
+			line-height: 43px;
+			height: 43px;
+			width: 139px;
+			text-align: center;
+			float: left;
+			font-size: 14px;
+		}
+		img{
+			float: left;
+		}
+		.place_you_order,
+		.proceed_to_checkout{
+			display:inline-block;
+			width: 100%;
+			margin-top:16px;
+			line-height: 40px;
+			text-align: center;
+			background-color:#000;
+			color: #fff; 
+			border: none;
+		}
+		p{
+			font-style: normal;
+			width:100%;
+			text-align:center;
+			margin-top:20px;
+			font-size: 14px;
+			.price{
+				color: red;
+			}
+		}
+	}
+}

@@ -1,0 +1,173 @@
+#list {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    font-family: inherit;
+    border: 1px solid $bordercol;
+    header {
+        position: relative;
+        margin: 0px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: stretch;
+        height: 40px;
+        line-height: 40px;
+        background: #f2f3f6;
+        box-sizing: border-box;
+        padding-left: 20px;
+        border-bottom: 1px solid $bordercol;
+        div {
+            position: relative;
+            color: $textcol;
+            box-sizing: border-box;
+            i {
+                margin-top: 25%;
+            }
+        }
+        div:first-of-type {
+            flex: 1 1 80%;
+        }
+        div:last-of-type {
+            flex: 0 0 100px;
+            font-size: 0px;
+            a {
+                display: inline-block;
+                vertical-align: top;
+                cursor: pointer;
+                font-size: pxToRem(16px);
+                width: 50px;
+                height: 100%;
+                line-height: 40px;
+                border-left: 1px solid $bordercol;
+                text-align: center;
+                box-sizing: border-box;
+            }
+        }
+    }
+    table {
+        width: 100%;
+        // border-collapse: collapse;
+        background: #f2f3f6;
+        border-spacing: 0;
+        th:first-of-type {
+            position: relative;
+            width: pxToRem(30px);
+            box-sizing: border-box;
+            label {
+                @include checkbox(0px);
+                margin: 10px 0px 0px 5px;
+            }
+        }
+        thead {
+            tr {
+                border-bottom: 1px solid $bordercol;
+                th {
+                    font-size: pxToRem(14px);
+                    color: $textcol;
+                    padding: 8px;
+                    text-align: left;
+                    font-weight: normal;
+                    border-bottom: 1px solid $bordercol;
+                }
+                td {
+                    border-bottom: 1px solid $bordercol;
+                }
+                th:nth-of-type(2) {
+                    width: pxToRem(200px);
+                }
+                th:last-of-type {
+                    width: pxToRem(200px);
+                }
+                th:first-of-type {
+                    font-size: pxToRem(14px);
+                    label {
+                        margin: 10px 0px 0px 10px;
+                    }
+                }
+            }
+        }
+        tbody {
+            background: white;
+            td, th {
+                font-size: pxToRem(14px);
+                color: $textcol;
+                vertical-align: top;
+                padding: 8px;
+                border-bottom: 1px solid $bordercol;
+                img {
+                    max-width: 100px;
+                }
+            }
+            tr:last-child {
+                td, th {
+                    border-bottom: none;
+                }
+            }
+            tr:last-of-type {
+                border: none;
+            }
+            tr.selected {
+                background: #fefbf2;
+            }
+            .ac p {
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+            th:first-of-type {
+                border-left: 4px solid white;
+                padding-left: 4px;
+                transition: all 0.2s ease-in-out;
+            }
+            tr:hover, tr.selected {
+                th:first-of-type {
+                    border-left: 4px solid $ahover;
+                    padding-left: 4px;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            td.comment {
+                img {
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-right: 5px;
+                }
+                p {
+                    display: inline-block;
+                    span {
+                        display: block;
+                        word-wrap: break-word;
+                        word-break: break-all;
+                    }
+                }
+            }
+            p {
+                time {
+                    color: $ahover;
+                }
+                a {
+                    color: $ahover;
+                }
+            }
+        }
+    }
+}
+.preview {
+    width: 90px;
+    height: auto;
+    margin-right: 10px;
+}
+.product_list{
+    i{
+        position: relative
+    }
+    label{
+        position:absolute;
+        top:0;
+        right: 0;
+        width: 100px;
+        height: 30px;
+        background:red;
+        display: block;
+    }
+}

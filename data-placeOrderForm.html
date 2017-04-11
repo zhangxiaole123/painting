@@ -1,0 +1,62 @@
+<form class="clearfix " action="data-place-adress.json" method="POST" id="commentForm2" >
+	<h2>ADD NEW ADDRESS</h2>
+	<div class="name clearfix">
+		<div class="fl">							
+			<label for="firstname">First name<span class="required"></span></label>
+			<input type="text" name="firstname" id="firstname" class="required" title="2 characters at least for your first name." minlength="2">	
+		</div>	
+		<div class="fr">
+			<label for="lastname">Last name<span class="required"></span></label>
+			<input type="text" name="lastname" id="lastname" class="required" minlength="2" title="2 characters at least for your last name.">	
+		</div>							
+	</div>
+	<div class="name clearfix">
+		<div class="fl">									
+			<label for="phonenumber">Phone number<span class="required"></span></label><input type="text" name="number" id="phonenumber" class="required">
+		</div>
+		<div class="fr"> 
+			<label for="email">E-mail address<span class="required "></span></label><input type="text" name="email" id="email" class="required email" title="Please enter a valid email address.">	
+		</div>				
+	</div>
+	<div class="addressline1 clearfix">
+		<label for="Line1">Address Line1<span class="required"></span></label><input type="text" name="" id="Line1" class="required" minlength="5" title="Your Address line must contain at least 5 characters.">		
+	</div>
+	<div class="addressline2">
+		<label for="Line2">Address Line2:</label><input type="text" name="" id="Line2" />	
+	</div>
+	<div class="selectd ">
+		<ul class="clearfix">
+		    <li class="fl">
+		    	<label for="jungle">Country / Region<span class="required"></span></label>
+		    	<select id="jungle" name="jungle" title="Please select something!" class="required">
+		    		<option></option>
+		    	  	<option value ="volvo">Volvo</option>
+		    	  	<option value ="saab">Saab</option>
+		    	  	<option value="opel">Opel</option>
+		    	  	<option value="audi">Audi</option>
+		    	</select>
+		    </li>
+		    <li class="fr">
+		    	<label for="fruit">States<span class="required"></span></label>
+		    	<select id="fruit" name="fruit" title="Please select something!" class="required">
+			    	<option></option>
+		    	  	<option value ="volvo">Volvo</option>
+		    	  	<option value ="saab">Saab</option>
+		    	  	<option value="opel">Opel</option>
+		    	  	<option value="audi">Audi</option>
+		    	</select>
+		    	<input type="text" name="states" class="states required"/>
+		    </li>
+		</ul>
+	</div>
+	<div >
+    	<label for="city">City<span class="required"></span></label>
+    	<input type="text" name="city" id="city" class="city" class="required"/>	
+	</div>	  
+
+	<div class=" zip">
+		<label>ZIP/Postal Code<span class="required"></span></label><input type="text" name="postalCode" class="required"/>	
+	</div>
+	<button class="button" type="submit">Submit</button>
+	<a href="#" class="privacy privacy_address">Privacy & Security Policy</a>	
+</form>

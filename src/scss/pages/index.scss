@@ -1,0 +1,130 @@
+@import "../layout/common.scss";
+@import "../layout/header.scss";
+@import "../layout/footer.scss";
+@import "../Widget/aProduct.scss";
+@import "../Widget/history.scss";
+.content{
+	padding-top: 16px;
+}
+.banner{
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	&:hover{
+		.icon-arrows-left{
+			left:20px;
+		}
+		.icon-arrows-right{
+			right: 20px;
+		}
+		&:after{
+			bottom:0;
+		}
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 30px;
+		background:#dfdfdf;
+		opacity: 0.8;
+		filter:alpha(opacity=80);
+		bottom: -50px;
+		left: 0;
+		z-index: 19;
+		transition:all 300ms ease;
+	}
+	.b-img{
+		overflow: hidden;
+		position: relative;
+		width: 1200px;
+		height: 600px;
+		z-index: 2;
+		li{
+			position: absolute;
+			top:0;
+			left: 0;
+			z-index: 1;
+		}
+	}
+	.b-index{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 20;
+		width: 100%;
+		text-align: center;
+		padding-top:5px;
+		li{
+			display: inline;
+			margin-left: 15px;
+			line-height: 25px;
+			&.active{
+				span{
+					background: $color;
+					border: none;
+				}
+			}
+			span{
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				border: 1px solid #666;
+				cursor: pointer;
+			}
+		}
+	}
+	.iconfont{
+		z-index: 3;
+		display: inline-block;
+		font-size: 120px;
+		position: absolute;
+		top: 50%;
+		margin-top: -50px;
+		color: #fff;
+		transition:all 300ms ease;
+		text-shadow:0 1px 2px #808080;
+	}
+	.icon-arrows-left{
+		left:-50px;
+	}
+	.icon-arrows-right{
+		right: -50px;
+	}
+}
+.popula{
+	margin-top: 79px;
+	.h1{
+		font-size: 22px;
+		color: #333;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 58px;
+	}
+	li{
+		width: 258px;
+		overflow: hidden;
+		margin-right: 56px;
+		float: left;
+		&.mgr{
+			margin-right: 0;
+		}
+		.p-img{
+			display: block;
+			width: 258px;
+			height: 258px;
+		}
+		.p-h2{
+			font-size: 18px;
+			color: #333;
+			margin: 18px 0 12px 0;
+		}
+		.p-p{
+			word-spacing: 9px;
+			color: #888;
+			text-align:justify;
+			line-height: 24px;
+		}
+	}
+}

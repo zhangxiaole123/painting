@@ -1,0 +1,128 @@
+
+#address-edit-form,.shipping-address-form
+    {
+        margin-bottom: 45px;
+        padding-left: 10px;
+        &.address-form{
+            width: 715px;
+            margin: 0 auto;
+        }
+        input
+        {
+            font-size: 13px;
+            height: 35px;
+            line-height: 35px;
+            text-indent: 5px;
+            border: 1px solid #dfdfdf;
+            border-radius: 2px;
+        }
+        label
+        {
+            display: block;
+            font-size: 13px;
+            color: #666;
+            margin-bottom:10px;
+            margin-top:10px;
+            span
+            {
+                color:red;
+                margin-right: 5px;
+                &:after{
+                    content: "*";
+                    font-size: pxToRem(14px);
+                    color: red;
+                    display: inline-block;
+                    margin-left: 5px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .name input{
+            width: 340px;
+        }      
+        .addressline2,
+        .addressline1
+        {
+            input
+            {
+                width: 100%;
+            }
+        }
+        .selectd
+        {
+            li{
+                width: 342px;
+               select{
+                    display: inline-block;
+                    width: 340px;
+                    height: 35px;
+                    border: 1px solid #cfcfcf;
+                    text-indent: 5px;
+                    appearance:none;
+                    -moz-appearance:none;
+                    -webkit-appearance:none;
+                }
+            }
+            .states{
+                width: 338px;
+            }
+        }
+        .city
+        {
+            width: 100%;
+        }
+        .zip
+        {
+            margin-bottom: 20px;
+            input
+            {
+                width:100%;
+            }
+        }
+        .privacy
+        {
+            float: right;
+            display: block;
+            color: #101010;
+            border-bottom: 1px solid #101010;
+            &:hover
+            {
+                color: #eeb053;
+                border-bottom: 1px solid #eeb053;
+            }
+        }
+        .addressbtn{
+            display: block;
+            width: 200px;
+            line-height: 35px;
+            margin: 20px auto;
+            border: none;
+            background-color: #101010;
+            color: #fff;
+        }
+    }
+.popup{
+    .error{
+        color: red;
+    }
+    h2{
+        font-size: 18px;
+        color:#101010;
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 1px solid #dfdfdf;
+    }
+    button{
+        display: block;
+        width: 200px;
+        line-height: 35px;
+        margin: 10px auto;
+        border: none;
+        background-color: #101010;
+        color: #fff;
+    }
+    .privacy_address{
+       margin-right: 278px;
+        margin-bottom: 20px;
+    }
+}

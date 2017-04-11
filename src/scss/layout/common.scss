@@ -1,0 +1,70 @@
+html, body, div, span, h1, h2,h3
+p, a, input,dl,dt,dd,
+img, i, ol, ul, li, form,
+nav, button,select,option{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased; 
+}
+html{
+    font-family: arial,Verdana, Geneva, sans-serif;
+}
+body { font-size: 12px; line-height: 1;color: #333; }
+address{ font-style:normal}
+.w1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+.text-heng{
+    text-decoration: line-through;
+    color: #aaa;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+ul:after,.clearfix:after{
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+.first{
+    clear: left;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+button{
+	cursor: pointer;
+}
+$color: #c11419;
+.error{
+    color:red;
+}
+
+.icon-weixuanzhongxin{
+    font-size: 25px;
+    display: inline-block;
+    transition:transform 300ms ease;
+    &.icon-shixinred{
+        color: $color;
+    }
+    &:hover{
+        color: $color;
+    }
+}

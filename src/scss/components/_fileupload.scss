@@ -1,0 +1,194 @@
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fileUpload {
+    padding: 20px;
+    header {
+        margin: 10px 0px;
+        h4 {
+            font-size: pxToRem(20px);
+            color: $textcol;
+        }
+    }
+    .dragDrop {
+        width: 100%;
+        box-sizing: border-box;
+        height: 300px;
+        border: 6px dashed #dcdcdc;
+        transition:all 0.2s ease-in-out;
+        form {
+            p {
+                color: #BABABA;
+                font-size: pxToRem(18px);
+                text-shadow: 2px 2px 2px #dcdcdc;
+                text-align: center;
+                &:first-of-type {
+                    margin-top: 100px;
+                }
+            }
+            input[type='file'] {
+                display: none;
+            }
+            .btns {
+                display: block;
+                margin: auto;
+                text-align: center;
+                font-size: 0px;
+            }
+            button {
+                font-size: pxToRem(16px);
+                color: #878787;
+                text-shadow: 2px 2px 2px #dcdcdc;
+                padding: 5px;
+                border: 1px solid #dcdcdc;
+                border-radius: 5px;
+                cursor: pointer;
+                display: inline-block;
+                margin: 0px 5px;
+            }
+        }
+        &.active {
+            border-color: darken(#dcdcdc, 10%);
+        }
+    }
+    .preview {
+        border: none;
+        font-size: 0px;
+        & > div {
+            display: inline-block;
+            margin: 5px;
+            width: 200px;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            height: 220px;
+            animation: show 0.5s ease-in-out both;
+            .file {
+                font-size: pxToRem(70px);
+                width: 100%;
+                height: 180px;
+                text-align: center;
+                line-height: 180px;
+            }
+            & > span {
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: pxToRem(14px);
+                color: $textcol;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            & > p {
+                position: absolute;
+                top: 0px;
+                margin: 0px;
+            }
+            i:nth-child(1) {
+                position: absolute;
+                right: 0px;
+                top: 5px;
+                font-size: pxToRem(18px);
+                margin: 0px;
+            }
+            .remove {
+                color: $blue;
+                cursor: pointer;
+                transition:all 0.2s ease-in-out;
+                z-index: 1;
+                &:before {
+                    opacity: 0.1;
+                    transition:all 0.2s ease-in-out;
+                }
+            }
+            .fa-exclamation-triangle {
+                color: $red;
+            }
+            .checkmark {
+                color: #5bbd72;
+            }
+            &:hover {
+                i.remove:before, i.resume:before {
+                    opacity: 0.8;
+                }
+            }
+            .resume {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                color: $blue;
+                width: pxToRem(50px);
+                height: pxToRem(50px);
+                margin: pxToRem(-25px) 0 0 pxToRem(-25px);
+                font-size: pxToRem(50px);
+                cursor: pointer;
+                transform: translate(0, -50%);
+                transition:all 0.2s ease-in-out;
+                &:before {
+                    opacity: 0.3;
+                    transition:all 0.2s ease-in-out;
+                }
+            }
+        }
+        img {
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        p:last-of-type {
+            top: 200px;
+            width: 100%;
+            height: 20px;
+            font-size: pxToRem(12px);
+            color: $textcol;
+            display: flex;
+            flex-flow: row nowrap;
+            background: white;
+            justify-content: space-between;
+            span {
+                flex: auto 0 0;
+            }
+        }
+        .name {
+            position: absolute;
+            background: white;
+            top: 182px;
+            left: 0px;
+            height: 20px;
+            overflow: hidden;
+            border-top: 1px solid $teal;
+                    font-size: pxToRem(12px);
+        }
+    }
+    .exist {
+        font-size: pxToRem(12px);
+        background: rgba(255,0,0,0.5);
+        color: white;
+        padding: 5px;
+        border-radius: 4px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        transform: rotate(30deg);
+    }
+}
+
+.upload.notice {
+    position: fixed;
+    background: rgba(102, 180, 255, 1);
+    color: white;
+    padding: 5px 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    top: 0px;
+    left: 50%;
+    height: 30px;
+    margin-top: -30px;
+    box-sizing: border-box;
+    transform: translate(-50%, 0);
+}

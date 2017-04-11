@@ -1,0 +1,135 @@
+@mixin inputfocus {
+    border: 1px solid $bordercol;
+    border-radius: 2px;
+    padding: 5px 10px;
+    color: $textcol;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    font-family: inherit;
+    &:focus {
+        transition: all 0.2s ease-in-out;
+        border-color: $basecol;
+    }
+}
+
+@keyframes tick {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@mixin checkbox($num: 20px) {
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        border: 1px solid $bordercol;
+        width: $num;
+        height:$num;
+        left: 0px;
+        top: 0px;
+        background: white;
+        box-sizing: border-box;
+        position: absolute;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+    }
+    &:after {
+        font-family: FontAwesome;
+        content: "\f00c";
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        font-size: pxToRem($num);
+        width: $num;
+        height: $num;
+        opacity: 0;
+        color: $basecol;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+    }
+    &:checked,&.selected {
+        &:after {
+            animation: tick 0.5s ease-in-out;
+            opacity: 1;
+        }
+        &:before {
+            border-color: $basecol;
+        }
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        z-index: 1;
+        left: 0px;
+        top: 0px;
+        width:$num;
+        height: $num;
+        cursor: pointer;
+        outline: none;
+    }
+}
+@mixin radio($num: 20px,$left:0px,$top:0px) {
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        border: 1px solid $bordercol;
+        border-radius: 50%;
+        width: $num;
+        height:$num;
+        left: $left;
+        top: $top;
+        background: white;
+        box-sizing: border-box;
+        position: absolute;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+    }
+    &:after {
+        // font-family: FontAwesome;
+        content: "";
+        display: block;
+        position: absolute;
+        left: ($num/4 + 0.25px) + $left;
+        top: $num/4 + $top;
+        font-size: pxToRem($num/2);
+        width: $num/2 - 1px;
+        height: $num/2;
+        opacity: 0;
+        background: $basecol;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+    }
+    &:checked,&.selected {
+        &:after {
+            animation: tick 0.5s ease-in-out;
+            opacity: 1;
+        }
+        &:before {
+            border-color: $basecol;
+        }
+    }
+    input {
+        position: absolute;
+        margin:0px;
+        padding:0px;
+        opacity: 0;
+        z-index: 1;
+        left: $left;
+        top: $top;
+        width: $num;
+        height:$num;
+        cursor: pointer;
+        outline: none;
+    }
+}

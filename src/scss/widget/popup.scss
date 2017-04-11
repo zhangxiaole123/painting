@@ -1,0 +1,137 @@
+.pop-dimmer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+    display: none;
+    .popup{
+        padding: 8px 20px 20px;
+        position: absolute;
+        margin: auto;   
+        background-color: #f9f9f9;
+        display: none;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: scroll;
+
+        .close{
+          position: absolute;
+          top:0;
+          right: -1px;
+          font-size: 40px;
+        }
+        .icon-j-next,
+        .icon-j-prev{
+            display: block;
+            position: absolute;
+            top:45%;
+            font-size: 50px;
+        }
+        .icon-j-prev{
+            left: 0;
+        }
+        .icon-j-next{
+            right: 0;
+        }
+    }
+}
+
+
+/* loading style css */
+@keyframes square-spin {
+    25% {
+        transform: perspective(100px) rotateX(180deg) rotateY(0);
+    }
+    50% {
+        transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+    }
+    75% {
+        transform: perspective(100px) rotateX(0) rotateY(180deg);
+    }
+    100% {
+        transform: perspective(100px) rotateX(0) rotateY(0);
+    }
+}
+
+.square-spin > div {
+    animation-fill-mode: both;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    animation: square-spin 3s 0s cubic-bezier(0.09, 0.57, 0.49, 0.9) infinite;
+}
+
+.ajax-loading {
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes ball-pulse-sync {
+    33% {
+        transform: translateY(10px);
+    }
+    66% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.ball-pulse-sync > div:nth-child(0) {
+    animation: ball-pulse-sync 0.6s -0.21s infinite ease-in-out;
+}
+
+.ball-pulse-sync > div:nth-child(1) {
+    animation: ball-pulse-sync 0.6s -0.14s infinite ease-in-out;
+}
+
+.ball-pulse-sync > div:nth-child(2) {
+    animation: ball-pulse-sync 0.6s -0.07s infinite ease-in-out;
+}
+
+.ball-pulse-sync > div:nth-child(3) {
+    animation: ball-pulse-sync 0.6s 0s infinite ease-in-out;
+}
+
+.ball-pulse-sync > div {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    margin: 2px;
+    animation-fill-mode: both;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cssanimations {
+    .popup {
+        transform-origin: center center;
+        &.active {
+            animation: bounceIn 0.75s forwards;
+        }
+        &.noactive {
+            animation: bounceOut 0.75s both;
+        }
+    }
+}
+.popInner {
+    display: inline-block;
+    transition:width 0.1s ease,height 0.1s ease;
+}
+
+

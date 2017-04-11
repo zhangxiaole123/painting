@@ -1,0 +1,31 @@
+/* breadcrumb */
+.breadcrumb {
+    padding: 10px 0px;
+    color: #7b7b7b !important;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 14px;
+    li {
+        display: inline-block;
+    }
+    i {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+    a {
+        margin: 0px 5px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            span {
+                color: $color;
+            }
+        }
+        span {
+            color: #7b7b7b;
+        }
+    }
+    span {
+        transition: all 0.2s ease-in-out;
+        color: $color;
+    }
+}

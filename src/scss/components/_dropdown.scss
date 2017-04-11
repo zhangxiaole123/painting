@@ -1,0 +1,58 @@
+.dropdown {
+    position: relative;
+    .subdrop {
+        position: absolute;
+       	text-align: left;
+        font-size: pxToRem(13px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0s ease 0.2s;
+        // width: 100%;
+        overflow: hidden;
+        z-index: 3;
+        box-sizing: border-box;
+    }
+    li {
+    	border: none!important;
+        background: white;
+    	// width: 100%;
+    	box-sizing: border-box;
+    	text-align: left;
+    	text-indent: 5px;
+    	a {
+    		white-space: nowrap;
+    	}
+    }
+    .subleft {
+		margin-left: -50px;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.2s ease-in-out;
+    }
+    .subright {
+		margin-left: 50px;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.2s ease-in-out;
+    }
+    .fa-caret-down {
+    	transition: all 0.2s ease-in-out;
+    }
+    &.active {
+    	.subleft,.subright {
+			margin-left: 0px;
+			visibility: visible;
+			opacity: 1;
+            width:100%;
+    	}
+    	.subdrop {
+    		transition: all 0s ease 0s;
+    		opacity: 1;
+    		visibility: visible;
+            z-index: 11;
+    	}
+    	.fa-caret-down {
+    		transform: rotate(180deg);
+    	}
+    }
+}
